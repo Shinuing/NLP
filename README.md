@@ -9,9 +9,10 @@ For NLP Analysis:
 
 ## NLP Algorithms
 #### TF-IDF 
-https://github.com/Shinuing/NLP/blob/main/Algorithms/TF-IDF%20From%20Scratch.ipynb
+https://github.com/Shinuing/NLP/blob/main/Algorithms/TF-IDF%20From%20Scratch.ipynb  
 Data Resourse: BBC News Text
 #### Word Embeddings
+https://github.com/Shinuing/NLP/blob/main/Algorithms/Word%20Embeddings.ipynb  
 Method: Word2Vec
 Data Resourse: GoogleNews-vectors-negative300
 
