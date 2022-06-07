@@ -23,3 +23,10 @@ Based on the movie gernes and keywords statistics to build a recommendation syst
 Data Resourse:tmbd
 - Text preprocessing and vector models
 - TfidfVectorization
+#### Markov Text Classifier
+https://github.com/Shinuing/NLP/tree/main/Markov%20Text%20Classifier
+Based on the
+Data Resourse: Edgar Allen Poe and Robert Frost Poetry Collection
+- Word2Idx
+- Markov Model
+- Condusion Matrix, F1-score
