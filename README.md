@@ -24,8 +24,8 @@ Data Resourse:tmbd
 - Text preprocessing and vector models
 - TfidfVectorization
 #### Markov Text Classifier
-https://github.com/Shinuing/NLP/tree/main/Markov%20Text%20Classifier
-Based on the
+https://github.com/Shinuing/NLP/tree/main/Markov%20Text%20Classifier  
+Build a classifier between two authors
 Data Resourse: Edgar Allen Poe and Robert Frost Poetry Collection
 - Word2Idx
 - Markov Model
