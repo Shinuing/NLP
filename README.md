@@ -29,4 +29,4 @@ Build a classifier between two authors
 Data Resourse: Edgar Allen Poe and Robert Frost Poetry Collection
 - Word2Idx
 - Markov Model
-- Condusion Matrix, F1-score
+- Confusion Matrix, F1-score
