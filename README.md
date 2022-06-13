@@ -30,3 +30,9 @@ Data Resourse: Edgar Allen Poe and Robert Frost Poetry Collection
 - Word2Idx
 - Markov Model
 - Confusion Matrix, F1-score
+#### Markov Poetry Generator
+https://github.com/Shinuing/NLP/tree/main/Markov%20Poetry%20Generator
+Based on Robert Frost Poetry Collection to generator a four-line poetry
+- List2Dict
+- Cumulative Probability
+- Second-order Markov Model
