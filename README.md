@@ -40,6 +40,6 @@ Based on Robert Frost Poetry Collection to generator a four-line poetry
 https://github.com/Shinuing/NLP/tree/main/Spam%20Detection  
 Build a classifier to predict if the SMS message spam or not
 - CountVectorizer + Lemma & wordnet
-- Naive Bayes
+- Naive Bayes (MultinomialNB)
 - Confusion Matrix, F1-score, ROC/AUC
 - WordCloud
