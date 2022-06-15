@@ -52,3 +52,12 @@ Data Resourse: Twitter US Airline Sentiment https://www.kaggle.com/crowdflower/t
 - Logistic Regression (multi-class, weighted)
 - Confusion Matrix, F1-score, ROC/AUC
 - WordCloud
+#### Text Summarization
+https://github.com/Shinuing/NLP/tree/main/Text%20Summarization  
+BBC News summarization based on sentence scores and textrank  
+Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification  
+- Method 1: TF-IDF 
+  - averaging non-zero means and return top scoring sentences
+- Method 2: TextRank (based on Google PageRank)
+  - sumy.TextRankSummarizer
+  - sumy.LsaSummarizer
