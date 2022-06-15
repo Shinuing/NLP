@@ -44,3 +44,11 @@ Data Resourse: https://www.kaggle.com/uciml/sms-spam-collection-dataset
 - Naive Bayes (MultinomialNB)
 - Confusion Matrix, F1-score, ROC/AUC
 - WordCloud
+#### Sentiment Analysis
+https://github.com/Shinuing/NLP/tree/main/Sentiment%20Analysis  
+Build a classifier for a sentiment analysis about the problems of each major U.S. airline based on tweets
+Data Resourse: https://www.kaggle.com/crowdflower/twitter-airline-sentiment  
+- CountVectorizer
+- Logistic Regression (multi-class, weighted)
+- Confusion Matrix, F1-score, ROC/AUC
+- WordCloud
