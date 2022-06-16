@@ -20,10 +20,10 @@ https://github.com/Shinuing/NLP/blob/main/Algorithms/Latent%20Semantic%20Analysi
 Clustering by book titles
 #### Latent Dirichlet Allocation (LDA)
 https://github.com/Shinuing/NLP/blob/main/Algorithms/Latent%20Dirichlet%20Allocation.ipynb  
-Clustering(topics) BBC news by news content 
+Topic Modelling BBC news
 #### Non-Negative Matrix Factorization(NMF)
 https://github.com/Shinuing/NLP/blob/main/Algorithms/Non-Negative%20Matrix%20Factorization%20(NMF).ipynb  
-Clustering(topics) BBC news by news content
+Topic Modelling BBC news
 
 ## NLP Applications
 #### Movie Recommendataion system
