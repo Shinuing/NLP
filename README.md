@@ -15,6 +15,9 @@ Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text
 https://github.com/Shinuing/NLP/blob/main/Algorithms/Word%20Embeddings.ipynb  
 Method: Word2Vec
 Data Resourse: GoogleNews-vectors-negative300
+#### Latent Semantic Analysis/Indexing
+https://github.com/Shinuing/NLP/blob/main/Algorithms/Latent%20Semantic%20Analysis%20CountVectorizer.ipynb  
+Clustering by book titles 
 
 ## NLP Applications
 #### Movie Recommendataion system
