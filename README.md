@@ -15,9 +15,12 @@ Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text
 https://github.com/Shinuing/NLP/blob/main/Algorithms/Word%20Embeddings.ipynb  
 Method: Word2Vec
 Data Resourse: GoogleNews-vectors-negative300
-#### Latent Semantic Analysis/Indexing
+#### Latent Semantic Analysis/Indexing (LSA/LSA)
 https://github.com/Shinuing/NLP/blob/main/Algorithms/Latent%20Semantic%20Analysis%20CountVectorizer.ipynb  
-Clustering by book titles 
+Clustering by book titles
+#### Latent Dirichlet Allocation (LDA)
+https://github.com/Shinuing/NLP/blob/main/Algorithms/Latent%20Dirichlet%20Allocation.ipynb  
+Clustering(topics) BBC news by news content 
 
 ## NLP Applications
 #### Movie Recommendataion system
