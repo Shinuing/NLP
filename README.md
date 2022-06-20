@@ -10,8 +10,10 @@ For NLP Analysis:
 ## NLP Algorithms
 #### TF-IDF 
 https://github.com/Shinuing/NLP/blob/main/Algorithms/TF-IDF%20From%20Scratch.ipynb  
+Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification   
 - with TensorFlow ANN 
   - Binary Classification https://github.com/Shinuing/NLP/blob/main/Algorithms/TF2%20Linear%20regression%2C%20Binory%20classification.ipynb   
+Data Resourse: Twitter US Airline Sentiment https://www.kaggle.com/crowdflower/twitter-airline-sentiment
   - multi-classification https://github.com/Shinuing/NLP/blob/main/Algorithms/TF2%20ANN%20with%20TF-IDF.ipynb   
 Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification  
 #### Word Embeddings
