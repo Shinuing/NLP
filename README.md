@@ -11,13 +11,8 @@ For NLP Analysis:
 #### TF-IDF 
 https://github.com/Shinuing/NLP/blob/main/Algorithms/TF-IDF%20From%20Scratch.ipynb  
 Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification   
-- with TensorFlow ANN 
-  - Binary Classification https://github.com/Shinuing/NLP/blob/main/Algorithms/TF2%20Linear%20regression%2C%20Binory%20classification.ipynb   
-Data Resourse: Twitter US Airline Sentiment https://www.kaggle.com/crowdflower/twitter-airline-sentiment
-  - multi-classification https://github.com/Shinuing/NLP/blob/main/Algorithms/TF2%20ANN%20with%20TF-IDF.ipynb   
-Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification  
 #### Word Embeddings
-https://github.com/Shinuing/NLP/blob/main/Algorithms/Word%20Embeddings.ipynb  
+https://github.com/Shinuing/NLP/blob/main/Algorithms/Word%20Embeddings.ipynb   
 Method: Word2Vec
 Data Resourse: GoogleNews-vectors-negative300
 #### Latent Semantic Analysis/Indexing (LSA/LSA)
@@ -29,6 +24,14 @@ Topic Modelling BBC news
 #### Non-Negative Matrix Factorization(NMF)
 https://github.com/Shinuing/NLP/blob/main/Algorithms/Non-Negative%20Matrix%20Factorization%20(NMF).ipynb  
 Topic Modelling BBC news
+#### Aritificial Neural Networks(ANN)
+Tensorflow
+- Binary Classification https://github.com/Shinuing/NLP/blob/main/Algorithms/TF2%20Linear%20regression%2C%20Binory%20classification.ipynb   
+Data Resourse: Twitter US Airline Sentiment https://www.kaggle.com/crowdflower/twitter-airline-sentiment
+- Multi-classification https://github.com/Shinuing/NLP/blob/main/Algorithms/TF2%20ANN%20with%20TF-IDF.ipynb   
+Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification  
+- Continuous Bag-of-Words(CBOW) https://github.com/Shinuing/NLP/blob/main/Algorithms/CBOW.ipynb  
+Take the average of all embeddings
 
 ## NLP Applications
 #### Movie Recommendataion system
