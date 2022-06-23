@@ -38,7 +38,8 @@ Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text
 #### Recurrent Neural Netword(RNN)
 - Text Classification in Tensorflow https://github.com/Shinuing/NLP/blob/main/Algorithms/RNN%20Text%20Classification.ipynb    
 Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification    
-- Part of Speech (POS) Tagging https://github.com/Shinuing/NLP/blob/main/Algorithms/Part%20of%20Speech%20(POS)%20Tagging.ipynb
+- Part of Speech (POS) Tagging https://github.com/Shinuing/NLP/blob/main/Algorithms/Part%20of%20Speech%20(POS)%20Tagging.ipynb      
+- Named Entity Recognition (NER) https://github.com/Shinuing/NLP/blob/main/Algorithms/NER%20TF2.ipynb  
 
 ## NLP Applications
 #### Movie Recommendataion system
