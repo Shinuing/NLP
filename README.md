@@ -32,6 +32,9 @@ Data Resourse: Twitter US Airline Sentiment https://www.kaggle.com/crowdflower/t
 Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification  
 - Continuous Bag-of-Words(CBOW) https://github.com/Shinuing/NLP/blob/main/Algorithms/CBOW.ipynb  
 Take the average of all embeddings
+#### Convolutional Neural Networks(CNN)
+Text Classification in Tensorflow https://github.com/Shinuing/NLP/blob/main/Algorithms/CNN%20Text%20Classification.ipynb   
+Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text-document-classification  
 
 ## NLP Applications
 #### Movie Recommendataion system
