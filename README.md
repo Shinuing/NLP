@@ -1,11 +1,35 @@
 # Natural Language Processing
 For NLP Analysis:
 - Get the text(strings)
-- Tokenize the text
-- Stopwords, stemming/lemmatization
-- Map tokens to integers
-- Convert into CountVectors/TF-IDF
-- Do ML task(recommend, detect spam, summarize, topic model...)
+- Tokenization
+  - Type
+    - 1. Word Tokenization (based on a certain delimiter)
+      - Pretrained Word Embeddings
+        - Word2Vec
+        - GloVe
+      - Issue
+        - Out-of-Vocabulary (OOV) words
+          - can be rescue with Unknown Token(UNK)
+          - entity info may lost and every OOV gets same representation
+        - Size
+    - 2. Character Tokenization
+      - overcomes the drawbacks about Word Tokenization (OOV, size)
+      - increase the length of inputs and outputs rapidly
+      - character do not contain info
+    - 3. Sub-word Tokenization (n-gram characters)
+  - Methods
+    - split()
+    - Regular Expressions (RegEx)
+    - NLTK -> tokenize() -> word/sent_tokenize
+    - TensorFlow.keras
+    - Gensim
+  - Parameters
+    - punctuation, casing, accents
+    - stop words, stemming, lemmatization
+- Vectorization
+  - CountVectorizer
+  - TF-IDF
+- ML task(recommend, detect spam, summarize, topic model...)
 
 ## NLP Algorithms
 #### TF-IDF 
