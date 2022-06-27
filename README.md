@@ -110,3 +110,7 @@ Data Resourse: BBC News Text https://www.kaggle.com/shivamkushwaha/bbc-full-text
 - Method 2: TextRank (based on Google PageRank)
   - sumy.TextRankSummarizer
   - sumy.LsaSummarizer
+#### IMDB Text Classification
+https://github.com/Shinuing/NLP/blob/main/IMDB_text_classification.ipynb   
+Sentiment analysis based on the review of movies
+- transformers
