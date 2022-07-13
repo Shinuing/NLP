@@ -1,0 +1,96 @@
+[IPKernelApp] Exception in execute request:
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mKeyboardInterrupt[0m                         Traceback (most recent call last)
+[0;32m/var/folders/wn/y3g3v6ns1xd13wp9v76279qc0000gn/T/ipykernel_54076/916632842.py[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;32mwith[0m [0mtorch[0m[0;34m.[0m[0mno_grad[0m[0;34m([0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m     [0mx_train[0m [0;34m=[0m [0mbert_model[0m[0;34m([0m[0mtrain_indices[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m     [0mx_val[0m [0;34m=[0m [0mbert_model[0m[0;34m([0m[0mval_indices[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m     [0mx_test[0m [0;34m=[0m [0mbert_model[0m[0;34m([0m[0mtest_indices[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py[0m in [0;36m_call_impl[0;34m(self, *input, **kwargs)[0m
+[1;32m   1108[0m         if not (self._backward_hooks or self._forward_hooks or self._forward_pre_hooks or _global_backward_hooks
+[1;32m   1109[0m                 or _global_forward_hooks or _global_forward_pre_hooks):
+[0;32m-> 1110[0;31m             [0;32mreturn[0m [0mforward_call[0m[0;34m([0m[0;34m*[0m[0minput[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1111[0m         [0;31m# Do not call functions when jit is used[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1112[0m         [0mfull_backward_hooks[0m[0;34m,[0m [0mnon_full_backward_hooks[0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py[0m in [0;36mforward[0;34m(self, input_ids, attention_mask, token_type_ids, position_ids, head_mask, inputs_embeds, encoder_hidden_states, encoder_attention_mask, past_key_values, use_cache, output_attentions, output_hidden_states, return_dict)[0m
+[1;32m   1016[0m             [0mpast_key_values_length[0m[0;34m=[0m[0mpast_key_values_length[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1017[0m         )
+[0;32m-> 1018[0;31m         encoder_outputs = self.encoder(
+[0m[1;32m   1019[0m             [0membedding_output[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1020[0m             [0mattention_mask[0m[0;34m=[0m[0mextended_attention_mask[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py[0m in [0;36m_call_impl[0;34m(self, *input, **kwargs)[0m
+[1;32m   1108[0m         if not (self._backward_hooks or self._forward_hooks or self._forward_pre_hooks or _global_backward_hooks
+[1;32m   1109[0m                 or _global_forward_hooks or _global_forward_pre_hooks):
+[0;32m-> 1110[0;31m             [0;32mreturn[0m [0mforward_call[0m[0;34m([0m[0;34m*[0m[0minput[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1111[0m         [0;31m# Do not call functions when jit is used[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1112[0m         [0mfull_backward_hooks[0m[0;34m,[0m [0mnon_full_backward_hooks[0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py[0m in [0;36mforward[0;34m(self, hidden_states, attention_mask, head_mask, encoder_hidden_states, encoder_attention_mask, past_key_values, use_cache, output_attentions, output_hidden_states, return_dict)[0m
+[1;32m    605[0m                 )
+[1;32m    606[0m             [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 607[0;31m                 layer_outputs = layer_module(
+[0m[1;32m    608[0m                     [0mhidden_states[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    609[0m                     [0mattention_mask[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py[0m in [0;36m_call_impl[0;34m(self, *input, **kwargs)[0m
+[1;32m   1108[0m         if not (self._backward_hooks or self._forward_hooks or self._forward_pre_hooks or _global_backward_hooks
+[1;32m   1109[0m                 or _global_forward_hooks or _global_forward_pre_hooks):
+[0;32m-> 1110[0;31m             [0;32mreturn[0m [0mforward_call[0m[0;34m([0m[0;34m*[0m[0minput[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1111[0m         [0;31m# Do not call functions when jit is used[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1112[0m         [0mfull_backward_hooks[0m[0;34m,[0m [0mnon_full_backward_hooks[0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py[0m in [0;36mforward[0;34m(self, hidden_states, attention_mask, head_mask, encoder_hidden_states, encoder_attention_mask, past_key_value, output_attentions)[0m
+[1;32m    491[0m         [0;31m# decoder uni-directional self-attention cached key/values tuple is at positions 1,2[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    492[0m         [0mself_attn_past_key_value[0m [0;34m=[0m [0mpast_key_value[0m[0;34m[[0m[0;34m:[0m[0;36m2[0m[0;34m][0m [0;32mif[0m [0mpast_key_value[0m [0;32mis[0m [0;32mnot[0m [0;32mNone[0m [0;32melse[0m [0;32mNone[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 493[0;31m         self_attention_outputs = self.attention(
+[0m[1;32m    494[0m             [0mhidden_states[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    495[0m             [0mattention_mask[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py[0m in [0;36m_call_impl[0;34m(self, *input, **kwargs)[0m
+[1;32m   1108[0m         if not (self._backward_hooks or self._forward_hooks or self._forward_pre_hooks or _global_backward_hooks
+[1;32m   1109[0m                 or _global_forward_hooks or _global_forward_pre_hooks):
+[0;32m-> 1110[0;31m             [0;32mreturn[0m [0mforward_call[0m[0;34m([0m[0;34m*[0m[0minput[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1111[0m         [0;31m# Do not call functions when jit is used[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1112[0m         [0mfull_backward_hooks[0m[0;34m,[0m [0mnon_full_backward_hooks[0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py[0m in [0;36mforward[0;34m(self, hidden_states, attention_mask, head_mask, encoder_hidden_states, encoder_attention_mask, past_key_value, output_attentions)[0m
+[1;32m    421[0m         [0moutput_attentions[0m[0;34m:[0m [0mOptional[0m[0;34m[[0m[0mbool[0m[0;34m][0m [0;34m=[0m [0;32mFalse[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    422[0m     ) -> Tuple[torch.Tensor]:
+[0;32m--> 423[0;31m         self_outputs = self.self(
+[0m[1;32m    424[0m             [0mhidden_states[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    425[0m             [0mattention_mask[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py[0m in [0;36m_call_impl[0;34m(self, *input, **kwargs)[0m
+[1;32m   1108[0m         if not (self._backward_hooks or self._forward_hooks or self._forward_pre_hooks or _global_backward_hooks
+[1;32m   1109[0m                 or _global_forward_hooks or _global_forward_pre_hooks):
+[0;32m-> 1110[0;31m             [0;32mreturn[0m [0mforward_call[0m[0;34m([0m[0;34m*[0m[0minput[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1111[0m         [0;31m# Do not call functions when jit is used[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1112[0m         [0mfull_backward_hooks[0m[0;34m,[0m [0mnon_full_backward_hooks[0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/transformers/models/bert/modeling_bert.py[0m in [0;36mforward[0;34m(self, hidden_states, attention_mask, head_mask, encoder_hidden_states, encoder_attention_mask, past_key_value, output_attentions)[0m
+[1;32m    309[0m             [0mvalue_layer[0m [0;34m=[0m [0mtorch[0m[0;34m.[0m[0mcat[0m[0;34m([0m[0;34m[[0m[0mpast_key_value[0m[0;34m[[0m[0;36m1[0m[0;34m][0m[0;34m,[0m [0mvalue_layer[0m[0;34m][0m[0;34m,[0m [0mdim[0m[0;34m=[0m[0;36m2[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    310[0m         [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 311[0;31m             [0mkey_layer[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mtranspose_for_scores[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mkey[0m[0;34m([0m[0mhidden_states[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    312[0m             [0mvalue_layer[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mtranspose_for_scores[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mvalue[0m[0;34m([0m[0mhidden_states[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    313[0m [0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py[0m in [0;36m_call_impl[0;34m(self, *input, **kwargs)[0m
+[1;32m   1108[0m         if not (self._backward_hooks or self._forward_hooks or self._forward_pre_hooks or _global_backward_hooks
+[1;32m   1109[0m                 or _global_forward_hooks or _global_forward_pre_hooks):
+[0;32m-> 1110[0;31m             [0;32mreturn[0m [0mforward_call[0m[0;34m([0m[0;34m*[0m[0minput[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1111[0m         [0;31m# Do not call functions when jit is used[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1112[0m         [0mfull_backward_hooks[0m[0;34m,[0m [0mnon_full_backward_hooks[0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m,[0m [0;34m[[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/linear.py[0m in [0;36mforward[0;34m(self, input)[0m
+[1;32m    101[0m [0;34m[0m[0m
+[1;32m    102[0m     [0;32mdef[0m [0mforward[0m[0;34m([0m[0mself[0m[0;34m,[0m [0minput[0m[0;34m:[0m [0mTensor[0m[0;34m)[0m [0;34m->[0m [0mTensor[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 103[0;31m         [0;32mreturn[0m [0mF[0m[0;34m.[0m[0mlinear[0m[0;34m([0m[0minput[0m[0;34m,[0m [0mself[0m[0;34m.[0m[0mweight[0m[0;34m,[0m [0mself[0m[0;34m.[0m[0mbias[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    104[0m [0;34m[0m[0m
+[1;32m    105[0m     [0;32mdef[0m [0mextra_repr[0m[0;34m([0m[0mself[0m[0;34m)[0m [0;34m->[0m [0mstr[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mKeyboardInterrupt[0m: 
+[IPKernelApp] Finishing abort
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
